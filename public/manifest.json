@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "rubbish-generator",
+  "description": "This extension create useless sentence",
+  "version": "1.0",
+  "icons":{
+    "16": "icon/extention-icon-16px.png",
+    "64": "icon/extention-icon-64px.png",
+    "128": "icon/extention-icon-128px.png"
+  },
+  "background":{
+    "scripts":["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Rubbish Generator",
+    "default_icon": {
+      "16": "icon/extention-icon-16px.png",
+      "64": "icon/extention-icon-64px.png",
+      "128": "icon/extention-icon-128px.png"
+    },
+    "default_popup": "index.html"
+  },
+  "chrome_url_overrides":{
+    "newtab":"newtab.html"
+  },
+  "permissions":["storage","contextMenus"]
+}
